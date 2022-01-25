@@ -1,0 +1,205 @@
+/* Honk1 */
+
+
+h3 img{
+  width: 7%;
+  height: 7%;
+
+  animation-duration: 8s;
+  animation-name: slidein;
+}
+
+h3{
+  text-align: center;
+  animation-duration: 10s;
+  animation-name: slidein2;
+  width: 100%;
+}
+
+#test{
+
+    animation-duration: 10s;
+    animation-name: slidein2;
+
+}
+
+@keyframes slidein2{
+    0% {
+        margin-left: 100%;
+    }
+    50% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 100%;
+    }
+    50% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+#temperature {
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0004e6, 0 0 40px#0004e6, 0 0 50px #0004e6, 0 0 60px #0004e6, 0 0 70px #0004e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #9a4dff, 0 0 40px#9a4dff, 0 0 50px #9a4dff, 0 0 60px  #9a4dff, 0 0 70px#9a4dff, 0 0 80px #9a4dff;
+    }
+  }
+
+  #time {
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0004e6, 0 0 40px#0004e6, 0 0 50px #0004e6, 0 0 60px #0004e6, 0 0 70px #0004e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #9a4dff, 0 0 40px#9a4dff, 0 0 50px #9a4dff, 0 0 60px  #9a4dff, 0 0 70px#9a4dff, 0 0 80px #9a4dff;
+    }
+  }
+
+  #weather_description{
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+    text-transform: capitalize;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0004e6, 0 0 40px#0004e6, 0 0 50px #0004e6, 0 0 60px #0004e6, 0 0 70px #0004e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #9a4dff, 0 0 40px#9a4dff, 0 0 50px #9a4dff, 0 0 60px  #9a4dff, 0 0 70px#9a4dff, 0 0 80px #9a4dff;
+    }
+  }
+
+
+
+.jumbotron{
+    background-image:url("images/background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.jumbotron1{
+    background: orange;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+    from {background-color: orange;}
+    to {background-color: red;}
+}
+
+#map {
+    height: 40%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-anchor:none;
+    }
+  
+#honk{
+   border-radius: 4px;
+}
+
+
+
+.custom-map-control-button {
+    appearance: button;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px;
+    padding: 0 0.5em;
+    height: 40px;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    }
+.custom-map-control-button:hover {
+    background: #ebebeb;
+    }
+
+.animate{
+    animation: fadeInDownBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
+
+#reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+         -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+             -o-transform: scale(0.9);
+                    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+}
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+
+/* Honk2 */
+h4 {
+    animation-duration: 8s;
+    animation-name: slidein3;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein3 {
+    0% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 300px;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+
+
+
+
+
